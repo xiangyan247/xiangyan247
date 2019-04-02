@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 80px;
+    text-align: center;
+    margin-top: 0;
+    padding: 20px;
+    background-color: orange
+}
+#board {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+    /* width: 30%;
+    margin: auto; */
+
+
+#board div {
+    float: left;
+    height: 150px;
+    width: 150px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: solid 8px darkblue;
+    margin: 5px;
+    font-size: 3em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#board div:nth-child(3n + 1) {
+    clear: both;
+  }
